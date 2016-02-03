@@ -1,0 +1,22 @@
+<div ng-controller="fileUpload" class="modal fade" tabindex="-1" role="dialog" id="imageModal" style="display: none; padding-right: 17px;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Save profile picture</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-inline" id="imageForm">
+                    <div class="form-group">
+                        <label class="sr-only" for="name">Choose picture</label>
+                        <input type="file" class="form-control" id="file" name="file" placeholder="Image file">
+                        <input type="hidden" name="uID" value="54">
+                        <input type="hidden" name="name" value="name"> </div>
+                    <button type="submit" class="btn btn-default" ng-click="uploadFileToUrl()">Save</button>
+                </form>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>

@@ -23,11 +23,15 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    
-    <div ng-controller="LoginCtrl">
-        <login></login>
+    <save-image-modal></save-image-modal>
+    <div class="container">
+        <div class="logSign col-md-6">
+            <login></login>
+            <signup></signup>
+        </div>
+        <profile></profile>
+        <messages></messages>
     </div>
-
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -43,7 +47,14 @@
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/loginCtrl.js"></script>
+    <script src="scripts/controllers/signupCtrl.js"></script>
+    <script src="scripts/controllers/messagesCtrl.js"></script>
+    <script src="scripts/controllers/saveImage.js"></script>
     <script src="scripts/directives/login.js"></script>
+    <script src="scripts/directives/signup.js"></script>
+    <script src="scripts/directives/messages.js"></script>
+    <script src="scripts/directives/saveImageModal.js"></script>
+    <script src="scripts/directives/profile.js"></script>
     <script src="scripts/services/ajaxFactory.js"></script>
     <!-- endbuild -->
 </body>
